@@ -1,37 +1,166 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Beranda</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShop</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* Navbar */
+nav{
+background:#222;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h1{
+font-size:24px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+/* Banner */
+.banner{
+background:linear-gradient(to right,#ff7b00,#ffb347);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.banner h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+/* Product */
+.products{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.price{
+color:#ff6600;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.card button{
+background:#ff6600;
+border:none;
+padding:10px 15px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#e65c00;
+}
+
+/* Footer */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+</style>
+
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">ISLANDS MARKET</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Produk</a>	
-      <a href="#">Kontak</a>
-    </nav>
-  </header>
+<nav>
+<h1>MyShop</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Produk</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>WELLCOME TO ISLANDS MARKET</h1>
-    <p>Selling blank overseas numbers</p>
-    <button>Shop Now</button>
-  </section>
+<div class="banner">
+<h2>Selamat Datang di MyShop</h2>
+<p>Tempat Belanja Online Terbaik</p>
+</div>
 
-  </section>
+<section class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Sepatu Sport</h3>
+<p class="price">Rp 250.000</p>
+<button>Beli Sekarang</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Kaos Casual</h3>
+<p class="price">Rp 120.000</p>
+<button>Beli Sekarang</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Jam Tangan</h3>
+<p class="price">Rp 350.000</p>
+<button>Beli Sekarang</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Tas Fashion</h3>
+<p class="price">Rp 200.000</p>
+<button>Beli Sekarang</button>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 MyShop - All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
-     
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 MyShop. All rights reserved.</p>
-  </footer>
